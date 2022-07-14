@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Sergii Rallo">
+
+	<!--metatextblock-->
+	<title>Фото рамки та фото альбоми по оптовим цінам!</title>
+	<meta name="description" content="Фото рамки та фото альбоми по оптовим цінам!">
+	<link rel="canonical" href="http://photo-frame-photo-album.smart-building.in.ua">
+	<!--/metatextblock-->
+	<meta name="robots" content="nofollow" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	<!-- Assets -->
+	<link rel="stylesheet" href="./assets/main.css" type="text/css" media="all">
+	<script src="./assets/main.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="header__title">Фоторамки та фотоальбоми оптом від постачальника.</h1>
+			<h2 class="header__title">Працюєм по всій Україні.</h2>
+			<p class="header__title">Слава Україні! Героям Слава!</p>
+			<a class="header__title phone" href="tel:+380674258379">067-425-83-79</a>
+			<h2 class="header__title">Шукаємо оптових покупців!!!</h2>
+		</header>
+		<main class="main">
+			<h2 class="hidden">Список товарів</h2>
+			<ul class="list">
+				<li class="list__item" id="item-1">
+					<img class="item__img-main" width="360" height="400" src="./images/2_1_360.jpg">
+					<h3 class="item__title">Фото рамка подвійна 9*13см</h3>
+					<p class="item__description">Вартість від 10-ти рамок - 20 грн, від 100-а рамок - 12 грн</p>
+					<p class="item__prices">
+						<span class="price">20 грн.</span>
+						<span class="price-old">100 грн.</span>
+					</p>
+					<bitton class="item__order button order" onclick="popup_show()">Замовити</bitton>
+				</li>
+				<li class="list__item">
+					<img class="item__img-main" width="360" height="400" src="./images/1_1_360.jpg">
+					<h3 class="item__title">Фото рамка дитяча 15*10 см,композитній матеріал та захистна плівка</h3>
+					<p class="item__description">Вартість від 10-ти рамок - 25 грн, від 100-а рамок - 13 грн</p>
+					<p class="item__prices">
+						<span class="price">25 грн.</span>
+						<span class="price-old">100 грн.</span>
+					</p>
+					<bitton class="item__order button order">Замовити</bitton>
+				</li>
+				<li class="list__item">
+					<img class="item__img-main" width="360" height="400" src="./images/3_1_360.jpg">
+					<h3 class="item__title">Фото рамка дитяча 15*10 см,композитній матеріал та захистна плівка</h3>
+					<p class="item__description">Вартість від 10-ти рамок - 20 грн, від 100-а рамок - 13 грн</p>
+					<p class="item__prices">
+						<span class="price">25 грн.</span>
+						<span class="price-old">100 грн.</span>
+					</p>
+				</li>
+				<li class="list__item">
+					<img class="item__img-main" width="360" height="400" src="./images/4_1_360.jpg">
+					<h3 class="item__title">Фото рамка подвійна 9*13см</h3>
+					<p class="item__description">Вартість від 10-ти рамок - 20 грн, від 100-а рамок - 12 грн</p>
+					<p class="item__prices">
+						<span class="price">20 грн.</span>
+						<span class="price-old">100 грн.</span>
+					</p>
+				</li>
+
+
+			</ul>
+		</main>
+		<footer class="footer">
+			<h2 class="footer__title title">Як замовити</h2>
+			<p class="footer__text">
+				Відправляємо новою поштою по всій территорії незалежної України! Телефонуйте:
+				<a class="phone" href="tel:+380673288070">067-328-80-70</a>.
+			</p>
+			<p class="footer__text">
+				Відправляйте вайбером або телеграмом фото позиції, яку хочите придбати і ми відпишимось вам.
+			</p>
+		</footer>
+	</div>
+	<div id="shadow" onclick="popup_close();"></div>
+	<div id="popup-order" class="popup">
+		<div class="popup__content">
+			<img id='order-img' width="72" height="80">
+			<p id="order-title"></p>
+			<input type="number" id="product_count" placeholder="Кількість рамок">
+			<input type="text" id="customer_name" placeholder="Введіть ім'я">
+			<input type="text" id="customer_phone" placeholder="Наприклад: 0930000000">
+			<textarea id="customer_message" rows="5" placeholder="Примітка"></textarea>
+			<button class="button" onclick="send_order()">Відправити замовлення</button>
+		</div>
+	</div>
+</body>
+
+</head>
